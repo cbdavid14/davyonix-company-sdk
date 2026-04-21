@@ -1,7 +1,6 @@
 {
   "name": "@davyonix-company/http-client",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "description": "Zero-dependency native fetch wrapper for internal microservices",
   "exports": {
@@ -21,6 +20,10 @@
   "types": "./dist/index.d.ts",
   "files": ["dist"],
   "sideEffects": false,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
   "scripts": {
     "build": "tsup",
     "test": "jest --coverage",

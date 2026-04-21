@@ -1,7 +1,6 @@
 {
   "name": "@davyonix-company/logger",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "description": "ILogger interface stub for structured logging",
   "exports": {
@@ -21,6 +20,10 @@
   "types": "./dist/index.d.ts",
   "files": ["dist"],
   "sideEffects": false,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
   "scripts": {
     "build": "tsup",
     "typecheck": "tsc --noEmit",
