@@ -29,7 +29,7 @@ const config: Config = {
       statements: 100,
     },
   },
-  coverageReporters: ['text', 'lcov'],
+  coverageReporters: ['text', 'lcov', 'json-summary'],
   clearMocks: true,
   restoreMocks: true,
 };
