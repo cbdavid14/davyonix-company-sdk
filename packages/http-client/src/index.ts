@@ -6,7 +6,9 @@ export type {
   HttpResponse,
   HttpMethod,
 } from './types/http-client.types.js';
-export { HttpClient } from './http-client.js';
+import type { HttpClientConfig } from './types/http-client.types.js';
+import { HttpClient } from './http-client.js';
+export { HttpClient };
 
 // Interceptor contracts
 export type { HttpInterceptor, NextInterceptor } from './types/interceptor.types.js';
@@ -31,6 +33,6 @@ export {
 export { withRetry } from './retry/retry.strategy.js';
 
 // Factory
-export function createHttpClient(config?: import('./types/http-client.types.js').HttpClientConfig) {
+export function createHttpClient(config?: HttpClientConfig): HttpClient {
   return new HttpClient(config);
 }
