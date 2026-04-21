@@ -17,7 +17,7 @@ permissions:
 
 env:
   NODE_VERSION: '20'
-  PNPM_VERSION: '9'
+  PNPM_VERSION: '10.33.0'
 
 jobs:
   # ── Quality gates (parallel) ──────────────────────────────────────────────
