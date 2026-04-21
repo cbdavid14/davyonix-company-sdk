@@ -1,0 +1,22 @@
+{
+  "name": "davyonix-company-sdk",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Internal company SDK monorepo",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "clean": "turbo run clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.3",
+    "@types/node": "^20.17.14"
+  }
+}
